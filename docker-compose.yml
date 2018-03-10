@@ -9,25 +9,25 @@ services:
         environment:
             STAGE: 'development'
             POSTGRES_ADDRESS: postgres
-            POSTGRES_PASSWORD: vndb
-            POSTGRES_USER: vndb
-            POSTGRES_DB: vndb
-            SENTRY_DSN: 'https://5885447644b24a0ca4b12bd41211ed4a:1e2ea3c0dd494d439e46b69a5fed8ae0@sentry.io/139727'
+            POSTGRES_PASSWORD: map-api
+            POSTGRES_USER: map-api
+            POSTGRES_DB: map-api
+            SENTRY_DSN: ''
 
     postgres:
         image: 'mdillon/postgis:9.5'
         ports:
             - "9001:5432"
         environment:
-            POSTGRES_PASSWORD: vndb
-            POSTGRES_USER: vndb
-            POSTGRES_DB: vndb
-            
+            POSTGRES_PASSWORD: map-api
+            POSTGRES_USER: map-api
+            POSTGRES_DB: map-api
+
     pgadmin:
         image: 'dpage/pgadmin4'
         ports:
             - "9002:80"
         environment:
-            POSTGRES_PASSWORD: vndb
-            POSTGRES_USER: vndb
-            POSTGRES_DB: vndb
+            POSTGRES_PASSWORD: map-api
+            POSTGRES_USER: map-api
+            POSTGRES_DB: map-api

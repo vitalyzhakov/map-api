@@ -10,6 +10,9 @@ vnytve.ru on yii2
 ```
 docker-compose up --build
 ```
+* Порт 9000 - web API
+* Порт 9001 - postgres
+* Порт 9002 - PGadmin
 
 cron-задания
 ---------------
