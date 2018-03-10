@@ -29,11 +29,6 @@ RUN apt-get update \
 # code optimize
     && docker-php-ext-install opcache \
 
-# GD
-    && apt-get -y install libfreetype6-dev libjpeg-dev \
-    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ --with-png-dir=/usr/include/ \
-    && docker-php-ext-install gd \
-
 # clean pakages
     && apt-get purge -y g++ \
     && apt-get autoremove -y \
