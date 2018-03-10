@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://vnytve.ru/sitemap.xml
+Host: https://vnytve.ru
+Disallow: /site/captcha
